@@ -61,7 +61,8 @@ class IPC{
     }
 }
 
-function log(...args){
+function log(){
+    let args = Array.from(arguments);
     if(this.config.silent){
         return;
     }
